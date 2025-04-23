@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: url('https://cdn.glitch.global/833e6bf5-3ad3-4d8c-ab19-995e18bb0fdc/taylor-swift-uhdpaper.com-4K-4.2249.jpg?v=1722628540112') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.55);
+            padding: 10px 20px;
+            border-radius: 0 0 0px 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            color: #fff;
+            z-index: 1;
+            margin: 0; 
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 15px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            color: #fff;
+            box-sizing: border-box;
+            margin-top: 70px; 
+            position: relative;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            background: linear-gradient(135deg, #f3ce07,#d6acc2);
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'DM Sans', sans-serif;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        #loading {
+            font-size: 1.2em;
+            color: #007bff;
+            margin-top: 10px;
+            display: none;
+        }
+        #timeTaken {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #fff;
+        }
+        .guide {
+            margin-top: 20px;
+            font-size: 1em;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            color: #fff;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .guide ul {
+            list-style-type: decimal;
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        .guide li {
+            margin-bottom: 8px;
+        }
+        .guide p {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+        
+@media (max-width: 600px) {
+            .navbar {
+                padding: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                margin: 5px 0;
+            }
+            .container {
+                padding: 15px;
+                max-width: 90%;
+                margin-top: 50px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .product-item img {
+                width: 80px;
+                height: 80px;
+            }
+            .product-info {
+                font-size: 16px;
+            }
+        }
+      .update-info {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+}
+{
+            font-family: 'DM Sans', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .update-info {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            cursor: pointer;
+        }
+        .update-info p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="saveditems.html">Saved Items</a>
+        <a href="help.html">Support</a>
+      <a href="updatepage.html">Update Log</a>
+    </div>
+    <div class="container">
+        <h1>Hi Everyone! I'm so sorry but the site is currently down, i'm trying to work on a fix and i'll update this page when i'm done!</h1>
+        <input type="text" id="productLink" placeholder="Enter product link">
+        <div class="button-container">
+            <button onclick="fetchAndRedirect()">Check Stock</button>
+            <button onclick="clearFields()">Clear</button>
+            <button onclick="saveProduct()">Save</button>
+        </div>
+        <p id="loading">Loading <span class="loading-dots"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></span></p>
+        <p id="timeTaken"></p>
+        <div class="guide">
+            <p>1. Find the product URL</p>
+            <p>2. Paste it into the box</p>
+            <p>3. Click Check Stock</p>
+            <p>4. It will redirect you to a checkout page displaying the available quantity!</p>
+            <p>Please note for pre-order items, the stock may not update or display occasionally.</p>
+<p>
+  Created by @foundheaven13 on Twitter/X
+          </p>
+        </div>
+    </div>
+
+  
+    <div class="update-info" onclick="window.location.href='updatepage.html'">
+                <p>Last Updated: <span id="last-updated"></span></p>
+        <p>Version: <span id="version-number"></span></p>
+    </div>
+
+  
+  
+    <script src="update.js"></script>
+<script>
+        function fetchWithProxy(url, params = {}) {
+            return fetch(`https://proxy.cors.sh/${url}`, {
+                ...params,
+                headers: {
+                    ...params.headers,
+                    'x-cors-api-key': 'live_a807a139105b4fbb9c419019e1fc6af02b059343a6837bb63271f1a5b5fa9e97'
+                }
+            });
+        }
+
+        async function fetchAndRedirect() {
+            const productLink = document.getElementById('productLink').value;
+            const targetUrl = productLink;
+
+            const loadingElement = document.getElementById('loading');
+            const timeTakenElement = document.getElementById('timeTaken');
+            loadingElement.style.display = 'block';
+
+            const startTime = Date.now();
+            try {
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 1;
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        loadingElement.innerHTML = 'Done!';
+                    }
+                }, 100);
+
+                const response = await fetchWithProxy(targetUrl, {});
+                const text = await response.text();
+                const endTime = Date.now();
+                const timeTaken = ((endTime - startTime) / 1000).toFixed(2);
+                timeTakenElement.textContent = `Request completed in ${timeTaken} seconds.`;
+
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html');
+
+                const scriptTags = doc.querySelectorAll('script');
+                let variantID = '';
+
+                for (const script of scriptTags) {
+                    const match = script.textContent.match(/"variantId":(\d+)/);
+                    if (match) {
+                        variantID = match[1];
+                        break;
+                    }
+                }
+
+                if (variantID) {
+                    setTimeout(() => {
+                        const redirectDomain = new URL(productLink).hostname;
+                        const redirectUrl = `https://${redirectDomain}/cart/${variantID}:999999`;
+                        setTimeout(() => {
+                            window.open(redirectUrl, '_blank');
+                        }, 500);
+                    }, 500);
+                } else {
+                    alert('Variant ID not found.');
+                }
+
+            } catch (error) {
+                console.error('Error fetching product page:', error);
+                alert('Error fetching product page.');
+            }
+        }
+
+        function clearFields() {
+            document.getElementById('productLink').value = '';
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('loading').innerHTML = '';
+            document.getElementById('timeTaken').textContent = '';
+        }
+
+        function saveProduct() {
+            const productLink = document.getElementById('productLink').value;
+            if (!productLink) {
+                alert('Please enter a valid product link.');
+                return;
+            }
+
+            const targetUrl = productLink;
+
+            fetchWithProxy(targetUrl, {})
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response was not ok. Status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, 'text/html');
+
+                    const imageUrl = doc.querySelector('button img')?.src;
+                    const title = doc.querySelector('h1.text_heading_lg')?.textContent;
+
+                    if (!imageUrl || !title) {
+                        throw new Error('Failed to extract product details.');
+                    }
+
+                    const savedProducts = JSON.parse(localStorage.getItem('savedProducts')) || [];
+
+                    if (savedProducts.some(product => product.link === productLink)) {
+                        alert('Product is already saved.');
+                        return;
+                    }
+
+                    savedProducts.push({
+                        link: productLink,
+                        imageUrl: imageUrl,
+                        title: title
+                    });
+
+                    localStorage.setItem('savedProducts', JSON.stringify(savedProducts));
+                    alert('Product saved successfully!');
+                })
+                .catch(error => {
+                    console.error('Error fetching product details:', error);
+                    alert(`Error saving product: ${error.message}`);
+                });
+        }
+
+        function handleKeyCombination(event) {
+            if (event.altKey && event.ctrlKey && event.code === 'KeyE') {
+                window.open('env.html');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('keydown', handleKeyCombination);
+        });
+
+    </script>
+</body>
+</html>
